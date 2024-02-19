@@ -1,0 +1,131 @@
+.blackface
+    position: fixed
+    background: rgba(0, 0, 0, 0.7)
+    height: 100%
+    width: 100%
+    z-index: 999999
+    display: none
+    top: 0
+
+    +above(tablet)
+      display: none
+
+    &.active
+        display: block
+
+.closedMenu
+    position: absolute
+    top: 10px
+    right: 12px
+    font-size: 18px
+    color: #000000
+    background: #fff
+    display: flex
+    justify-content: center
+    padding: 7px 11px 3px 11px
+    font-weight: bold
+    background: linear-gradient( 180deg, #f4f1ea 0%, #e7dfcf 50%, #e7dfcf 100%)
+
+    +above(tablet)
+      display: none
+
+    &.active
+        display: block
+
+.menu-mobile
+    position: fixed
+    height: 100%
+    width: 100%
+    top: 0
+    overflow-y: scroll
+    opacity: 0
+    z-index: 999999
+    transform: translateX(-100%)
+    transition: 0.5s
+    visibility: hidden
+    z-index: 999999
+    padding-bottom: 20px
+
+    +above(tablet)
+      display: none
+
+
+    span
+        height: 50px
+        display: flex
+        background: linear-gradient(180deg, rgba(10,13,0,1) 0%, rgba(29,38,0,1) 25%, rgba(46,61,0,1) 50%, rgba(78,102,4,1) 91%, rgba(17,24,3,1) 100%)
+        align-items: center
+        justify-content: flex-start
+        font-size: 15px
+        padding-left: 20px
+        font-weight: 700
+        color: #fff
+
+    &.active
+        visibility: visible
+        transform: translateX(0)
+
+        +below(medium-large)
+        opacity: 1
+
+    ul
+        width: 100%
+        margin-bottom: 0
+
+        > li
+            display: block
+            position: relative
+
+
+            &.menu-item-has-children
+                &:before
+                    content: ''
+                    background-image: url('../images/caret-right-solid.png')
+                    background-repeat: no-repeat
+                    width: 19px
+                    height: 19px
+                    right: 25px
+                    top: 10px
+                    background-size: contain
+                    position: absolute
+                    transition: 0.4s ease
+
+            &.active
+                .sub-menu
+                    display: block
+
+                &:before
+                    transform: rotate(90deg)
+
+
+            a
+                width: 100%
+                background: #000
+                color: #fff !important
+                font-size: 16px
+                border-bottom: 1px solid #404040
+                display: block
+                display: flex
+                align-items: center
+                padding: 14px 20px
+
+        .sub-menu
+            display: none
+            margin-left: 0 !important
+            > li
+
+
+                &.active
+                    .menu-depth-2
+                        display: block
+
+                > a
+                    background: #404040 !important
+                    padding-left: 30px
+                    color: #fff !important
+                    border-bottom: 1px solid #5a5a5a
+
+                    &:before
+                        content: '-'
+                        font-size: 12px
+                        margin-right: 10px

@@ -1,0 +1,348 @@
+.storefront-sorting
+  display: none
+
+.content-top-categoryLogo
+  padding: 40px 0 35px 0
+  background: #fff
+  margin-top: 2px
+
+  +below(desktop)
+    padding: 15px 0 25px
+
+  .logo-category
+    width: 287px
+    height: 287px
+    border-radius: 50%
+    border: 11px solid #d0ff7f
+    position: relative
+    margin: 0 auto
+    margin-bottom: 35px
+    overflow: hidden
+
+    +below(desktop)
+      width: 190px
+      height: 190px
+      margin-bottom: 15px
+      border: 7px solid #d0ff7f
+
+    .logo-inner
+      background: #000
+      width: 100%
+      height: 100%
+      border: 11px solid #528000
+      border-radius: 50%
+      overflow: hidden
+      position: relative
+
+      +below(desktop)
+        border: 7px solid #528000
+
+      img
+        position: absolute
+        z-index: 9
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        padding: 0 25px
+
+        +below(desktop)
+          padding: 0 20px
+
+  .text-category
+
+    +below(desktop)
+      text-overflow: ellipsis
+      display: -webkit-box
+      -webkit-line-clamp: 3
+      -webkit-box-orient: vertical
+      overflow: hidden
+      position: relative
+
+
+      &.active
+        -webkit-line-clamp: 999999999
+    p
+      font-size: 16px
+      text-align: center
+      font-family: $openSans
+      line-height: 24px
+      font-weight: 600
+      margin-bottom: 0 !important
+
+      +below(desktop)
+        font-size: 12px
+        line-height: 18px
+
+
+  .btn-vermais
+    display: table
+    margin: 0 auto
+
+    +above(tablet)
+      display: none
+
+    p
+      margin: 0
+
+    span
+      display: block
+      margin-top: 15px
+      padding: 0 15px
+      font-size: 16px
+      color: #d6740f
+      letter-spacing: 0.5px
+      position: relative
+
+      i
+        position: absolute
+        font-size: 16px
+        line-height: -2px
+        top: -4px
+        right: 0px
+
+    .open-text.active
+      display: none
+
+    .closed-text.active
+      display: block !important
+
+      i
+        top: 3px
+
+.banner-category
+  position: relative
+  padding-bottom: 8px
+
+  &:before
+    content: ''
+    height: 1px
+    background: #729400
+    width: 100%
+    position: absolute
+    bottom: 0
+
+  &:after
+    content: ''
+    background: #729400
+    height: 5px
+    width: 100%
+    position: absolute
+    bottom: 3
+
+  img
+    width: 100%
+    border-radius: 0
+
+.title-category-product-19
+  display: block !important
+
+.title-archive-product-19,
+.title-category-banco-19
+  display: none !important
+
+
+.title-category-product-16,
+.title-archive-product-16
+  display: none !important
+
+
+.title-category-banco-16
+  display: block !important
+
+
+.term-tipos-de-semente.term-19
+  .title-category-product-19
+    display: none !important
+
+.term-tipos-de-semente.term-19
+  .title-archive-product-19
+    display: block !important
+
+
+.term-bancos-de-semente.term-16
+  .title-category-banco-16
+    display: none !important
+
+.term-bancos-de-semente.term-16
+  .title-archive-product-16
+    display: block !important
+
+.archive-product
+
+  .list-product
+    ul
+      +above(tablet)
+        display: flex
+        justify-content: center
+        grid-gap: 10px
+        flex-wrap: wrap
+      +below(desktop)
+        grid-template-columns: repeat(2, 2fr)
+        grid-gap: 5px
+      li
+        padding: 5px 5px 15px 5px
+        +above(tablet)
+          width: 20%
+
+        img
+          border: 2px solid #fff
+          border-radius: 0
+          object-fit: cover
+          height: 200px
+
+          +below(mobile)
+            height: 120px
+
+        .price
+          del
+            display: none
+
+          ins
+            b
+              display: none
+
+
+        .woocommerce-loop-product__title
+          font-weight: 500
+          color: #c1ff00
+          font-size: 16px
+          text-align: center
+          text-transform: uppercase
+          margin-top: 10px
+          letter-spacing: 0.5px
+
+        .add_to_cart_button
+          margin: 0 auto
+          margin-top: 5px
+          margin-top: 10px
+          width: 100px
+          height: 30px
+          background: #87b300
+          border: 2px solid #d6740f
+          border-radius: 2px
+          font-size: 14px
+          color: $white
+          @include flexCenter
+          font-weight: 700
+          text-shadow: 0 1px 2px #585858
+          padding-top: 13px
+          transition: all 0.3s ease
+          text-transform: uppercase
+          letter-spacing: 1px
+
+          &:hover
+            background: #c5e26a
+
+        .price
+          margin-top: 5px
+          display: block
+          color: #fff
+          .woocommerce-Price-currencySymbol
+            font-size: 14px
+            margin-right: 3px
+
+          .woocommerce-Price-amount
+            font-size: 28px
+
+
+.onsale
+  display: none !important
+
+
+.site-main
+
+  .entry-header
+    padding: 20px 0 !important
+
+  .entry-title
+    text-transform: uppercase
+    font-size: 46px
+    font-weight: 700
+    text-align: center
+    color: #496100
+    text-transform: uppercase
+    margin-bottom: 0
+
+    +below(desktop)
+      font-size: 30px
+
+.cart_totals
+  h2
+    text-transform: uppercase
+    font-size: 46px
+    font-weight: 700
+    text-align: center
+    color: #496100
+    text-transform: uppercase
+    margin-bottom: 20px
+
+    +below(desktop)
+      font-size: 30px
+
+.woocommerce
+
+  input[type=text], input[type=number], input[type=email], input[type=tel], input[type=url], input[type=password], input[type=search], textarea, .input-text
+    background-color: #fff !important
+    box-shadow: none !important
+
+  .woocommerce-info
+    margin-top: 0 !important
+
+  .shop_table
+    .actions
+      background-color: #e7dfcf !important
+
+
+
+
+  .cart-subtotal
+    background: #f8f8f8 !important
+
+  .order-total
+    background: #f8f8f8 !important
+
+
+.woocommerce-cart-form
+  a.remove::before
+    color: #d6740c !important
+
+  table:not( .has-background ) tbody td, fieldset, fieldset legend
+    background-color: #f1f1f1 !important
+
+  table.cart td.product-remove, table.cart td.actions
+     border-top-color: transparent !important
+
+.woocommerce-cart-form
+  table:not( .has-background ) tbody .product-remove, fieldset, fieldset legend
+    +below(tablet)
+      background: #e7dfcf !important
+
+.coupon
+  button[type=submit]
+    background: #628202 !important
+    color: #fff
+
+    +below(tablet)
+      width: 100% !important
+
+button[name=update_cart]
+  background-color: #d0740e !important
+  border-color: #eeeeee !important
+  color: #fff !important
+
+  +below(tablet)
+    width: 100% !important
+
+.checkout-button
+  text-transform: uppercase
+  letter-spacing: 0.5px
+  border: 2px solid #d6740e !important
+
+
+#place_order
+  text-transform: uppercase
+  border: 2px solid #d6740e !important
+  font-weight: 700
+
+  +below(desktop)
+    font-size: 20px !important

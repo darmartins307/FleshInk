@@ -1,0 +1,92 @@
+footer
+  padding: 55px 0
+  background: rgb(0,0,0)
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(17,23,0,1) 40%, rgba(27,36,0,1) 70%, rgba(27,36,0,1) 100%)
+  position: relative
+  border-top: 5px solid #729400
+
+  &:before
+    content: ''
+    height: 1px
+    width: 100%
+    background: #729400
+    position: absolute
+    top: 2px
+
+  .footer
+    display: flex
+    justify-content: space-between
+
+    +below(tablet)
+      flex-direction: column
+      align-items: center
+
+
+    > div
+      +below(tablet)
+        width: 140px
+
+    .social
+      justify-content: center
+
+
+  .logo-footer
+    width: 101px
+
+    +below(tablet)
+      margin: 0 auto
+      display: table
+      width: 75px
+      height: auto
+
+  .column-1
+
+    .social
+      margin-top: 30px
+      margin-left: 5px
+
+
+  .column-2,
+  .column-3,
+  .column-4
+    +below(tablet)
+      margin-top: 30px
+
+  .title-menu-footer
+    h3
+      font-size: 18px
+      color: #d2ff00
+      font-weight: 500
+      letter-spacing: 1.25px
+
+  .menu-footer
+    li
+      position: relative
+      padding-left: 13px
+      & + li
+        margin-top: 10px
+
+      &::before
+        content: '•'
+        position: absolute
+        left: 0
+        top: 2px
+        font-size: 14px
+        color: #d6740f
+
+      a
+        font-size: 14px
+        color: #fff
+        text-transform: uppercase
+
+
+.cop
+  padding: 30px 0
+  background: #000000
+  text-align: center
+  font-size: 12px
+  color: #c7c7c7
+  border-top: 1px solid #516400
+  font-family: $openSans
+  p
+    margin: 0

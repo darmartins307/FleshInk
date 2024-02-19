@@ -1,0 +1,341 @@
+/*
+
+Theme Name:   	Storefront Child Theme
+
+Theme URI:    	https://github.com/stuartduff/storefront-child-theme
+
+Author:       	Stuart Duff
+
+Author URI:     http://stuartduff.com
+
+Template:     	storefront
+
+Description:  	This is a blank child theme for WooThemes StoreFront theme
+
+Version:      	1.0.0
+
+License:      	GNU General Public License v2 or later
+
+License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
+
+Text Domain:  	storefront
+
+Tags:         	black, white, light, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready
+
+This theme, like WordPress, is licensed under the GPL.
+
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Storefront is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+
+FontAwesome License: SIL Open Font License - http://scripts.sil.org/OFL
+
+Images License: GNU General Public License v2 or later
+
+*/
+
+/*
+
+ * Add your own custom css below this text.
+
+ */
+
+.storefront-sorting { 
+display: visible !important;
+}
+
+header .user {
+
+	width: 27px;
+
+}
+
+
+
+
+
+.archive-product .list-product ul li img {
+
+	    width: 100%;
+
+}
+
+.pswp {
+
+z-index: 999999;
+
+}
+
+.stock {
+	margin: 0 auto;
+	display: table;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+.stock.in-stock {
+	display: none;
+}
+/* .stock {
+
+	display: none !important;
+
+} */
+
+/*body {
+
+	padding-top: 73px;
+
+}*/
+
+
+
+/*.single_add_to_cart_button {
+
+	display: none !important;
+
+}
+
+*/
+
+a.xc-woo-order-whatsapp-btn {
+
+	margin-top: 20px;
+
+    font-size: 16px;
+
+    padding: 13px;
+
+}
+
+
+
+.product-type-simple a.xc-woo-order-whatsapp-btn {
+
+	display: block;
+
+}
+
+
+
+.product-type-variable  a.xc-woo-order-whatsapp-btn {
+
+
+
+	width: 50%;
+
+}
+
+
+
+/*.infos-header .cart,
+
+.infos-header .user {
+
+	display: none;
+
+}*/
+/*
+.single-product div.product form.cart {
+	display: none;
+}
+*/
+
+.shop_table .cart-subtotal {
+	font-size: 16px;
+}
+
+.shop_table .order-total {
+	font-size: 18px;
+}
+.woocommerce-shipping-methods li {
+	margin-bottom: 15px !important;
+	font-size: 17px;
+}
+
+.woocommerce-order-received .woocommerce-message .button {
+	font-size: 24px;
+	margin-top: 5px;
+}
+
+.archive-product .list-product ul li .add_to_cart_button {
+	padding-top: 4px;
+}
+
+
+#pagarme-checkout-container iframe {
+	z-index: 999999 !important;
+}
+
+.woocommerce-form-coupon {
+	display: block !important;
+}
+
+.woocommerce-form-coupon .button {
+    background: #618201;
+    color: #fff;
+}
+
+@media(min-width: 768px) {
+
+
+
+	.single-product .product .woocommerce-product-gallery__wrapper img {
+
+		height: 510px;
+
+		object-fit: contain;
+
+	}
+
+
+
+}
+
+.menu-desktop nav > ul > li > a {
+	font-size: 13px;
+	padding: 0 22px;
+}
+
+.form-header {
+	margin-left: 10px;
+	margin-right: 15px;
+}
+.form-header .icon-search {
+	width: 25px;
+	cursor: pointer;
+}
+.form-header .icon-search.active {
+	display: none;
+}
+
+.closed-search {
+	width: 25px;
+	cursor: pointer;
+}
+
+.closed-search.active {
+	display: block !important;
+}
+
+.form-header form {
+	position: absolute;
+	width: 390px;
+	right: 0;
+	top: 61px;
+	display: flex;
+	height: 50px;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(+20px);
+	transition: all 0.3s ease;
+}
+
+.form-header form.active {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+.form-header form input[type=search] {
+	width: 65%;
+}
+.form-header form button {
+	width: 35%;
+	background-color: #d6740f;
+	color: #fff;
+}
+
+@media(max-width: 992px) {
+	.form-header form {
+		width: 100%;
+		left: 0;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.woocommerce-order-received .woocommerce-message .button {
+		margin-left: 0;
+		margin-bottom: 10px;
+		float: none;
+		padding-left: 5px;
+		display: block;
+	}
+
+	.single-product .product .woocommerce-product-gallery__wrapper img {
+
+		height: 340px;
+
+		object-fit: contain;
+
+	}
+
+	.single-product .single-extraFields ul {
+
+		width: 280px;
+
+		margin: 0 auto;
+
+		display: table;
+
+	}
+
+	.product-type-variable  a.xc-woo-order-whatsapp-btn {
+
+		margin-top: 0;
+
+		width: 100%;
+
+	}
+
+
+
+}
+
+@media (max-width: 320px) {
+
+	.single-product .product .woocommerce-product-gallery__wrapper img {
+
+		height: 290px;
+
+		object-fit: contain;
+
+	}
+
+}
+
+@media (min-width: 992px) {
+	.single-product .product.product_cat-fertilizantes.product-type-variable form.cart .woocommerce-variation-price {
+		position: relative;
+		top: 0;
+	}
+	.single-product .product.product_cat-fertilizantes.product-type-variable form.cart {
+		flex-direction: column;
+		width: 50%;
+
+	}
+}
+
+
+
+.link-whatsapp {
+	bottom: 35px !important;
+	z-index: 999999999;
+	position: fixed;
+	right: 25px;
+}
+
+.woocommerce-bacs-bank-details .order_details strong {
+	font-size: 26px;
+}
+
+.menu-desktop .sub-menu {
+	padding: 10px 10px 15px;
+}

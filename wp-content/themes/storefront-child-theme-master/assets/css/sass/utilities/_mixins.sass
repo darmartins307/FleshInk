@@ -1,0 +1,86 @@
+//#
+
+@mixin inline-top
+    display: inline-block
+    vertical-align: top
+
+// --------------------------------------
+// Responsive
+// --------------------------------------
+
+$breakpoints: large-desktop medium-large desktop tablet phablet mobile small-mobile breakmenu
+$breakpoints-variables: $large-desktop $medium-large $desktop $tablet $phablet $mobile $small-mobile $breakmenu
+$breakpoints-max-variables: 1000em $medium-large-max $desktop-max $tablet-max $phablet-max $mobile-max $small-mobile-max $breakmenu
+
+// --------------------------------------
+// BELOW v
+// --------------------------------------
+
+@mixin below($point)
+    @each $breakpoint in $breakpoints
+        $i: index($breakpoints, $breakpoint)
+
+        @if $point == $breakpoint
+            @media screen and (max-width: nth($breakpoints-variables, $i) - 1)
+                @content
+
+// --------------------------------------
+// ABOVE ^
+// --------------------------------------
+
+@mixin above($point)
+    @each $breakpoint in $breakpoints
+        $i: index($breakpoints, $breakpoint)
+
+        @if $point == $breakpoint
+            @media screen and (min-width: nth($breakpoints-max-variables, $i)+1)
+                @content
+
+// --------------------------------------
+// BETWEEN < >
+// --------------------------------------
+
+@mixin between($pointA, $pointB)
+    @each $breakpointA in $breakpoints
+        $i: index($breakpoints, $breakpointA)
+
+        @each $breakpointB in $breakpoints
+            $j: index($breakpoints, $breakpointB)
+
+            @if $pointA == $breakpointA and $pointB == $breakpointB
+                @media screen and (min-width: nth($breakpoints-variables, $i)) and (max-width: nth($breakpoints-max-variables, $j))
+                    @content
+
+// --------------------------------------
+// AT -
+// --------------------------------------
+
+@mixin at($point)
+    @each $breakpoint in $breakpoints
+        $i: index($breakpoints, $breakpoint)
+
+        @if $point == $breakpoint
+            @media screen and (min-width: nth($breakpoints-variables, $i)) and (max-width: nth($breakpoints-max-variables, $i))
+                @content
+
+@mixin push--auto
+    margin:
+        left: auto
+        right: auto
+
+@mixin background-gradient-bottom
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 3%,rgba(0,0,0,1) 60%,rgba(60,60,60,1) 100%)
+
+@mixin background-gradient-top
+    background: linear-gradient(to bottom, #af528d 0%,#a53e7f 50%,#9b2871 100%)
+
+@mixin transitioneffect
+    transition: 0.3s ease
+
+@mixin flexCenter
+  display: flex
+  align-items: center
+  justify-content: center
+
+@mixin boxShadow
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.64)

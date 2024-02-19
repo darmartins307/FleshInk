@@ -1,0 +1,96 @@
+//#
+
+html
+    -ms-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    font-family: $sans-serif !important
+
+body
+  display: inline-block
+  vertical-align: top
+  width: 100% !important
+  max-width: 100%
+  color: #000 !important
+  height: 100% !important
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  overflow-x: hidden
+  font-family: $sans-serif !important
+  padding-top: 105px
+  background-color: #e7dfcf !important
+
+  +below(desktop)
+    padding-top: 61px
+
+  &.active
+    overflow: hidden
+
+
+*, *::before, *::after
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    box-sizing: border-box
+
+*, *:focus, *:active
+    box-shadow: none
+    outline: none
+
+img
+  max-width: 100%
+  vertical-align: bottom
+
+.clearfix
+    clear: both
+
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus
+    outline: none !important
+
+input,
+select,
+textarea,
+button
+    outline: none !important
+
+
+[data-scroll-animation]
+    opacity: 0
+    &.animated
+        opacity: 1
+
+h1,
+h2,
+h3,
+h4,
+h5
+  margin: 0
+
+li
+    list-style: none
+
+a
+    text-decoration: none
+    color: inherit
+
+a:hover
+    text-decoration: none !important
+
+ul,
+p
+  margin: 0
+  padding: 0
+
+
+a:focus, button:focus, .button.alt:focus, input:focus, textarea:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus
+  outline-color: none !important
+  outline: none !important
+
+.site-main,
+.content-area
+  margin-bottom: 0 !important

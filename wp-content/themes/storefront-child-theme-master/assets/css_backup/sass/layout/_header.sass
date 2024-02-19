@@ -1,0 +1,149 @@
+header
+  background: rgb(10,13,0)
+  background: linear-gradient(180deg, rgba(10,13,0,1) 0%, rgba(29,38,0,1) 25%, rgba(46,61,0,1) 50%, rgba(78,102,4,1) 91%, rgba(17,24,3,1) 100%)
+  border-top: 5px solid #729400
+  border-bottom: 5px solid #729400
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 999999
+
+  +below(desktop)
+    border-top: 3px solid #729400
+    border-bottom: 3px solid #729400
+
+    .cart
+      width: 25px
+      height: 25px
+
+    .logo
+      width: 100px
+
+  .header
+    position: relative
+    padding: 20px 0
+    transition: all 0.5s ease
+
+    +below(desktop)
+      padding: 10px 0
+
+    &:before
+      content: ''
+      height: 1px
+      background: #5e8500
+      width: 100%
+      position: absolute
+      top: 2px
+      z-index: 99
+
+    &:after
+      content: ''
+      height: 1px
+      background: #5e8500
+      width: 100%
+      position: absolute
+      bottom: 2px
+      z-index: 99
+
+
+  .inner-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+    z-index: 999
+
+    +below(desktop)
+      padding: 0 40px
+
+
+
+.image-details-left
+  position: absolute
+  left: 0
+  top: 0
+  z-index: 9
+  height: 100%
+
+  img
+    height: 100%
+
+  +below(tablet)
+    width: 80px
+
+.image-details-right
+  position: absolute
+  right: 0
+  top: 0
+  z-index: 9
+  height: 100%
+  img
+    height: 100%
+
+  +below(tablet)
+    width: 80px
+
+.infos-header
+  display: flex
+  align-items: center
+
+  .cart
+    background: url('../images/cart-icon.png')
+    width: 36px
+    height: 34px
+    background-repeat: no-repeat
+    display: inline-block
+    margin-right: 50px
+    background-size: contain
+    transition: all 0.3s ease
+    +below(desktop)
+      width: 25px
+      height: 25px
+      margin-right: 25px
+
+.social
+  display: flex
+
+  .icon-face
+    background-image: url('../images/icon-face.svg')
+    width: 31px
+    height: 31px
+    background-repeat: no-repeat
+    transition: all 0.3s ease
+
+  .icon-insta
+    background-image: url('../images/icon-insta.svg')
+    width: 31px
+    height: 31px
+    background-repeat: no-repeat
+    transition: all 0.3s ease
+
+  &.social-header
+    +below(desktop)
+      display: none
+
+
+.fixedTop
+  box-shadow: 0 -2px 7px 2px #000000d4
+  +above(tablet)
+    .header
+      padding: 6px 0
+
+    .logo
+      transform: scale(0.7)
+
+    .menu-desktop nav > ul > li > a
+      height: 40px
+
+    .cart
+      width: 25px
+      height: 25px
+
+    .social
+      a
+        width: 25px
+        height: 25px
+        font-size: 14px
+
+    .menu-desktop nav > ul > li.menu-item-has-children:hover .sub-menu
+      top: 39px

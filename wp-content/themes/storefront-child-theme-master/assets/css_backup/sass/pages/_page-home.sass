@@ -1,0 +1,394 @@
+.slider
+  border-bottom: 5px solid #729400
+  img
+    width: 100%
+    border-radius: none
+
+  .slick-dots
+    position: absolute
+    bottom: -13px
+    transform: translateX(-50%)
+    left: 50%
+    z-index: 99
+
+    li
+      display: inline-block
+      margin: 0 5px
+
+      button
+        font-size: 0px !important
+        border-radius: 50%
+        width: 20px
+        height: 20px
+        border: 3px solid #729400
+        background: #fff
+
+        +below(desktop)
+          width: 16px
+          height: 16px
+
+
+      &.slick-active
+        button
+          background: #ff7200
+
+
+.content-mid-home
+  display: flex
+  flex-direction: column
+
+.section-boxHome
+  background: #e7dfcf
+  padding: 60px 0
+  position: relative
+
+  +below(desktop)
+    padding: 35px 0
+    order: 3
+
+
+  &.boxSingle
+    width: 100%
+    padding: 20px 0 70px
+
+    +below(desktop)
+      padding: 20px 0 45px
+
+    &:before
+      display: none
+
+
+  &:before
+    content: ''
+    height: 1px
+    width: 100%
+    background: #729400
+    position: absolute
+    top: 2px
+
+.content-boxes-category
+  background: #e7dfcf
+  padding-bottom: 70px
+
+  +below(desktop)
+    padding-bottom: 35px
+
+.content-boxes
+
+  ul
+    border: 3px solid #fff
+    border-radius: 5px
+    display: flex
+    flex-wrap: wrap
+
+    +below(tablet)
+      width: 245px
+      margin: 0 auto
+
+    li
+      display: flex
+      align-items: center
+      padding: 10px 15px 8px 15px
+      background: rgb(244,242,237)
+      background: linear-gradient(180deg, rgba(244,242,237,1) 0%, rgba(236,234,226,1) 50%, rgba(233,230,221,1) 100%)
+      border-top: 2px solid #e9e6dd
+      border-right: 1px solid #d3d3ca
+      border-left: 1px solid #ffffff
+      width: 25%
+      justify-content: center
+      +below(desktop)
+        width: 50%
+
+      +below(tablet)
+        width: 100%
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        justify-items: center
+
+      &:nth-child(1),
+      &:nth-child(3),
+      &:nth-child(4),
+        img
+          +below(tablet)
+            max-width: 40px
+
+      &:last-child
+        border-right: none
+
+      &:first-child
+        border-left: none
+
+      img
+        +below(tablet)
+          max-width: 55px
+
+      .text
+        margin-left: 20px
+        +below(tablet)
+          width: 135px
+          margin-left: 20px
+        h3
+          font-weight: 700
+          color: #496100
+          font-size: 18px
+          text-transform: uppercase
+          margin: 0
+          margin-bottom: 2px
+        p
+          font-size: 14px
+          color: #000
+          margin: 0
+          line-height: 14px
+          font-weight: 600
+
+.section-product
+  padding: 60px 0 70px
+  background: #e7dfcf
+  position: relative
+
+  +below(tablet)
+    padding: 30px 0 35px
+
+  &:before
+    content: ''
+    background: linear-gradient(180deg, rgba(244,241,234,1) 0%, rgba(231,223,207,1) 50%, rgba(231,223,207,1) 100%)
+    width: 100%
+    top: 0
+    height: 120px
+    position: absolute
+
+    +below(tablet)
+      height: 50px
+
+  .header-title--product
+    position: relative
+
+    h2
+      text-align: center
+      z-index: 99999
+      position: relative
+      margin: 0 auto
+      display: table
+      padding: 0 35px
+      background: #e7dfcf
+
+
+    &:before
+      content: ''
+      background: url('../images/lineBg-title.png')
+      background-repeat: repeat-x
+      height: 10px
+      width: 100%
+      position: absolute
+      top: 28px
+
+      +below(tablet)
+        display: none
+
+
+
+  .list-product
+    ul
+      display: grid
+      grid-template-columns: repeat(3, 3fr)
+      grid-gap: 45px
+      margin-top: 40px
+
+      +below(desktop)
+        grid-template-columns: repeat(2, 2fr)
+        grid-gap: 15px
+        margin-top: 25px
+
+      +below(phablet)
+        grid-template-columns: repeat(1, 1fr)
+        grid-gap: 15px
+
+
+      li
+        background: $green
+        padding: 10px 10px 15px 10px
+        text-align: center
+
+        .thumb-product
+          width: 100%
+          height: 290px
+          border: 3px solid #fff
+          background-size: cover
+          background-repeat: no-repeat
+          background-position: center center
+
+          +below(desktop)
+            height: 220px
+
+          +below(mobile)
+            height: 220px
+
+        .name-product
+          font-size: 22px
+          font-weight: 500
+          color: #c1ff00
+          margin-top: 15px
+          text-transform: uppercase
+
+          +below(desktop)
+            font-size: 16px
+
+        .category-product
+          color: #fff
+          margin-top: 10px
+          font-weight: 300
+          font-size: 18px
+
+        .subcategory-product
+          color: #ffc600
+          font-size: 18px
+          margin-top: 10px
+
+        .btn-buy
+          a
+            margin: 0 auto
+            margin-top: 10px
+            width: 167px
+            height: 46px
+            background: #87b300
+            border: 2px solid #d6740f
+            border-radius: 2px
+            font-size: 24px
+            color: $white
+            @include flexCenter
+            font-weight: 700
+            text-shadow: 0 1px 2px #585858
+            padding-top: 5px
+            transition: all 0.3s ease
+
+            +below(desktop)
+              width: 100%
+              font-size: 20px
+              height: 40px
+
+            &:hover
+              background: #c5e26a
+
+.section-dicas
+  padding: 70px 0
+  position: relative
+  border-top: 5px solid #729400
+  border-bottom: 5px solid #729400
+  background: #fff
+
+  +below(desktop)
+    padding: 35px 0
+
+  &:before
+    content: ''
+    height: 1px
+    width: 100%
+    background: #729400
+    position: absolute
+    top: 2px
+
+
+  &:after
+    content: ''
+    height: 1px
+    width: 100%
+    background: #729400
+    position: absolute
+    bottom: 2px
+
+  .title-section
+    text-align: center
+    font-size: 46px
+    color: $green
+    font-weight: 700
+
+    +below(desktop)
+      font-size: 30px
+
+  .list-dicas
+    display: grid
+    grid-template-columns: repeat(3, 3fr)
+    grid-gap: 40px
+    text-align: center
+    margin-top: 30px
+
+    +below(desktop)
+      grid-template-columns: repeat(1, 1fr)
+      grid-gap: 55px
+
+    .thumb-dicas
+      height: 225px
+      width: 100%
+      border: 2px solid #d6740f
+      background-position: center center
+
+    .title-dicas
+      font-size: 22px
+      font-weight: 600
+      color: $green
+      margin-top: 30px
+      text-transform: uppercase
+
+    .desc
+      font-size: 12px
+      line-height: 20px
+      margin-top: 20px
+      font-family: $openSans
+      font-weight: 600
+
+      +above(tablet)
+        padding: 0 25px
+
+
+    .btn-dica
+      a
+        margin: 0 auto
+        margin-top: 25px
+        width: 123px
+        height: 38px
+        background: #87b300
+        border: 2px solid #d6740f
+        border-radius: 2px
+        font-size: 18px
+        color: $white
+        @include flexCenter
+        font-weight: 700
+        text-shadow: 0 1px 2px #585858
+        padding-top: 5px
+        letter-spacing: 0.25px
+        transition: all 0.3s ease
+
+        &:hover
+          background: #c5e26a
+
+
+.section-instagram
+
+  .title-instagram
+    padding: 30px 0
+    font-size: 30px
+    font-weight: 700
+    color: #496100
+    text-align: center
+    background: rgb(244,241,234)
+    background: linear-gradient(180deg, #eaddbe 0%, #f4f0e8 50%, white 100%)
+
+    +below(desktop)
+      font-size: 24px
+
+    .container
+      @include flexCenter
+    i
+      margin-right: 20px
+      font-size: 46px
+      margin-bottom: 3px
+
+      +below(desktop)
+        font-size: 34px
+
+  .jr-insta-thumb
+    li
+      border-right: 1px solid #fff !important
+
+      &:last-child
+        border-right: none !important

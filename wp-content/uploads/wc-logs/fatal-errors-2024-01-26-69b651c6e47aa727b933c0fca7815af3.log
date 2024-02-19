@@ -1,0 +1,89 @@
+2024-01-26T16:37:55+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Session_Handler::get_session_cookie() in /var/www/html/fleshink/wp-content/plugins/woocommerce/includes/class-wc-session-handler.php:88
+Stack trace:
+#0 /var/www/html/fleshink/wp-content/plugins/woocommerce/includes/class-wc-session-handler.php(71): WC_Session_Handler->init_session_cookie()
+#1 /var/www/html/fleshink/wp-content/plugins/woocommerce/includes/class-woocommerce.php(920): WC_Session_Handler->init()
+#2 /var/www/html/fleshink/wp-content/plugins/woocommerce/includes/wc-core-functions.php(2566): WooCommerce->initialize_session()
+#3 /var/www/html/fleshink/wp-content/plugins/woocommerce/includes/class-woocommerce.php(717): wc_load_cart()
+#4 /var/www/html/fleshink/wp-includes/class-wp-hook.php(324): WooCommerce->init()
+#5 /var/www/html/fleshink/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /var/www/html/fleshink/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/fleshink/wp-settings.php(643): do_action()
+#8 /var/www/html/fleshink/wp-config.php(99): require_once('...')
+#9 /var/www/html/fleshink/wp-load.php(50): require_once('...')
+#10 /var/www/html/fleshink/wp-admin/admin-ajax.php(22): require_once('...')
+#11 {main}
+  thrown in /var/www/html/fleshink/wp-content/plugins/woocommerce/includes/class-wc-session-handler.php on line 88
+
+2024-01-26T16:38:13+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Session_Handler::get_session_cookie() in /var/www/html/fleshink/wp-content/plugins/woocommerce/includes/class-wc-session-handler.php:88
+Stack trace:
+#0 /var/www/html/fleshink/wp-content/plugins/woocommerce/includes/class-wc-session-handler.php(71): WC_Session_Handler->init_session_cookie()
+#1 /var/www/html/fleshink/wp-content/plugins/woocommerce/includes/class-woocommerce.php(920): WC_Session_Handler->init()
+#2 /var/www/html/fleshink/wp-content/plugins/woocommerce/includes/wc-core-functions.php(2566): WooCommerce->initialize_session()
+#3 /var/www/html/fleshink/wp-content/plugins/woocommerce/includes/class-woocommerce.php(717): wc_load_cart()
+#4 /var/www/html/fleshink/wp-includes/class-wp-hook.php(324): WooCommerce->init()
+#5 /var/www/html/fleshink/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /var/www/html/fleshink/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/fleshink/wp-settings.php(643): do_action()
+#8 /var/www/html/fleshink/wp-config.php(99): require_once('...')
+#9 /var/www/html/fleshink/wp-load.php(50): require_once('...')
+#10 /var/www/html/fleshink/wp-blog-header.php(13): require_once('...')
+#11 /var/www/html/fleshink/index.php(17): require('...')
+#12 {main}
+  thrown in /var/www/html/fleshink/wp-content/plugins/woocommerce/includes/class-wc-session-handler.php on line 88
+
+2024-01-26T16:38:48+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Session_Handler::get_session_cookie() in /var/www/html/fleshink/wp-content/plugins/woocommerce/includes/class-wc-session-handler.php:88
+Stack trace:
+#0 /var/www/html/fleshink/wp-content/plugins/woocommerce/includes/class-wc-session-handler.php(71): WC_Session_Handler->init_session_cookie()
+#1 /var/www/html/fleshink/wp-content/plugins/woocommerce/includes/class-woocommerce.php(920): WC_Session_Handler->init()
+#2 /var/www/html/fleshink/wp-content/plugins/woocommerce/includes/wc-core-functions.php(2566): WooCommerce->initialize_session()
+#3 /var/www/html/fleshink/wp-content/plugins/woocommerce/includes/class-woocommerce.php(717): wc_load_cart()
+#4 /var/www/html/fleshink/wp-includes/class-wp-hook.php(324): WooCommerce->init()
+#5 /var/www/html/fleshink/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#6 /var/www/html/fleshink/wp-includes/plugin.php(517): WP_Hook->do_action()
+#7 /var/www/html/fleshink/wp-settings.php(643): do_action()
+#8 /var/www/html/fleshink/wp-config.php(99): require_once('...')
+#9 /var/www/html/fleshink/wp-load.php(50): require_once('...')
+#10 /var/www/html/fleshink/wp-admin/admin-ajax.php(22): require_once('...')
+#11 {main}
+  thrown in /var/www/html/fleshink/wp-content/plugins/woocommerce/includes/class-wc-session-handler.php on line 88
+
+2024-01-26T16:40:26+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /var/www/html/fleshink/wp-content/themes/storefront-child-theme-master/woocommerce/archive-product.php:54
+Stack trace:
+#0 /var/www/html/fleshink/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/fleshink/wp-blog-header.php(19): require_once('...')
+#2 /var/www/html/fleshink/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/html/fleshink/wp-content/themes/storefront-child-theme-master/woocommerce/archive-product.php on line 54
+
+2024-01-26T16:41:11+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /var/www/html/fleshink/wp-content/themes/storefront-child-theme-master/woocommerce/archive-product.php:54
+Stack trace:
+#0 /var/www/html/fleshink/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/fleshink/wp-blog-header.php(19): require_once('...')
+#2 /var/www/html/fleshink/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/html/fleshink/wp-content/themes/storefront-child-theme-master/woocommerce/archive-product.php on line 54
+
+2024-01-26T16:41:20+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /var/www/html/fleshink/wp-content/themes/storefront-child-theme-master/woocommerce/archive-product.php:54
+Stack trace:
+#0 /var/www/html/fleshink/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/fleshink/wp-blog-header.php(19): require_once('...')
+#2 /var/www/html/fleshink/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/html/fleshink/wp-content/themes/storefront-child-theme-master/woocommerce/archive-product.php on line 54
+
+2024-01-26T16:41:31+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /var/www/html/fleshink/wp-content/themes/storefront-child-theme-master/woocommerce/archive-product.php:54
+Stack trace:
+#0 /var/www/html/fleshink/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/fleshink/wp-blog-header.php(19): require_once('...')
+#2 /var/www/html/fleshink/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/html/fleshink/wp-content/themes/storefront-child-theme-master/woocommerce/archive-product.php on line 54
+
+2024-01-26T17:31:59+00:00 CRITICAL Uncaught Error: Call to undefined function get_field() in /var/www/html/fleshink/wp-content/themes/storefront-child-theme-master/woocommerce/archive-product.php:54
+Stack trace:
+#0 /var/www/html/fleshink/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/fleshink/wp-blog-header.php(19): require_once('...')
+#2 /var/www/html/fleshink/index.php(17): require('...')
+#3 {main}
+  thrown in /var/www/html/fleshink/wp-content/themes/storefront-child-theme-master/woocommerce/archive-product.php on line 54
+
