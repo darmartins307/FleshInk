@@ -1,7 +1,4 @@
 
-import Glide, { Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm'
-
-import Glide from '@glidejs/glide'
 
 $(function() {
 

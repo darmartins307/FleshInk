@@ -3,35 +3,21 @@
 
 
 <div class="slider">
- 
-
-<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-
-<script>
-  new Glide('.glide').mount()
-</script>
-
 <?php 
 $images = get_field('banner_home');
 $size = 'full'; // (thumbnail, medium, large, full or custom size)
-if( $images ): ?>
+if($images) { 
 
-        <?php foreach( $images as $image_id ): ?>
-     
-            <div class="item">
-	
-				<?php 
-				 echo wp_get_attachment_image( $image_id, $size ). "</a>";
-					
-					
+foreach($images as $image_id){
+  echo "<div class='item'>";
+  echo wp_get_attachment_image( $image_id, $size ). "</a>";
+  echo "</div>";
+  
+}
 
-				?>
-			
-                </div>
-        <?php endforeach; ?>
+}
 
-<?php endif;
-      
+
 ?>
 
 </div>
@@ -143,43 +129,7 @@ if( $featured_posts ): ?>
 
       </div>
     
-      <?php 
-$images = get_field('carrousel_home');
-$size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
-?>
 
-      <div class="glide">
-  <div data-glide-el="track" class="glide__track">
-    <ul class="glide__slides">
-
-     <?php if( $images ): ?>
-
-<?php foreach( $images as $image_id ): ?>
-
-    <li class="glide_slide">
-      <?php 
-        echo wp_get_attachment_image( $image_id, $size ). "</a>";
-      ?>
-      </li>
-      <?php 
-      endforeach;
-      endif;
-      ?>
-    </ul>
-  </div>
-</div>
-
-    </div>
-
-
-    <div class="glide">
-  <div class="glide__track" data-glide-el="track">
-    <ul class="glide__slides">
-      <li class="glide__slide">0</li>
-      <li class="glide__slide">1</li>
-      <li class="glide__slide">2</li>
-    </ul>
-  </div>
 </div>
 
 

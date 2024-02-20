@@ -37,12 +37,6 @@
 
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/style.css">
 
-<!-- Required Core Stylesheet -->
-<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-
-<!-- Optional Theme Stylesheet -->
-<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
-
 
 <?php wp_head(); ?>
 
